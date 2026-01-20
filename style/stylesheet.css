@@ -1,0 +1,167 @@
+:root {
+      --text-color: hsl(30, 10%, 34%);
+      --special-color: hsl(332, 51%, 32%);
+      --titles-color: hsl(14, 45%, 36%);
+    }
+
+    body {
+      background-color: hsl(30, 54%, 90%);
+      font-family: "Outfit", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--text-color);
+    }
+
+
+    main {
+      margin: 20px auto;
+      width: 100%;
+      max-width: 700px;
+      padding: 30px;
+      background-color: white;
+      border-radius: 20px;
+      box-sizing: border-box;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: hsl(24, 5%, 18%);
+    }
+
+    h1,
+    h2 {
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+    }
+
+    h2 {
+      color: var(--titles-color);
+    }
+
+    h4 {
+      color: var(--special-color);
+    }
+
+    .preparation-time {
+      background-color: hsl(330, 100%, 98%);
+      border-radius: 10px;
+      padding: 5px 30px;
+      margin: 30px auto;
+    }
+
+    hr {
+      border: none;
+      margin: 30px auto;
+      border-top: 1px solid hsla(32, 10%, 34%, 0.281);
+    }
+
+
+    ul,
+    ol {
+      padding-left: 0px;
+      list-style-type: none;
+    }
+
+    li {
+      padding-left: 30px;
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    li::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-weight: 700;
+      color: var(--titles-color);
+    }
+
+    ul li::before {
+      content: "•";
+      font-size: 20px;
+    }
+
+    ol li {
+      counter-increment: count;
+    }
+
+    ol li::before {
+      content: counter(count)".";
+    }
+
+
+    .preparation-time li::before {
+      color: var(--special-color);
+    }
+
+    
+
+    table {
+      width: 100%;
+      text-align: left;
+      border-collapse: collapse;
+    }
+
+    th {
+      font-weight: 400;
+    }
+
+    td {
+      font-weight: bold;
+      color: var(--titles-color);
+    }
+
+    td,
+    th {
+      border-bottom: 1px solid hsla(32, 10%, 34%, 0.281);
+      padding: 10px;
+    }
+
+    tr:last-child td,
+    tr:last-child th {
+      border-bottom: none;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+
+    @media screen and (max-width: 375px) {
+      body {
+        padding: 0px;
+        margin: 0px;
+      }
+
+      main {
+        margin: 0px;
+        width: 100%;
+        padding: 0px;
+        background-color: white;
+        border-radius: 0px;
+      }
+
+      .content {
+        padding: 30px;
+      }
+
+      img {
+        border-radius: 0px;
+        width: 100%;
+      }
+
+      .attribution {
+        margin: 15px;
+      }
+
+
+    }
